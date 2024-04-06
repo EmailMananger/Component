@@ -1,10 +1,16 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³Ëûøÿÿÿÿ8¿³Ê©ë1
+g	java:S112*"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8°¢ë¬ë1
+g	java:S1120"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8±¢ë¬ë1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³Ëûøÿÿÿÿ8´¢ë¬ë1
 C
-java:S1170"!Make this final field static too.(…ËÅ‚úÿÿÿÿ8Å³Ê©ë1
+java:S1170"!Make this final field static too.(…ËÅ‚úÿÿÿÿ8•¬…­ë1
 >
-java:S1170	"!Make this final field static too.(Åı¢ 8Å³Ê©ë1
+java:S1170"!Make this final field static too.(Åı¢ 8ÜÔ…­ë1
+K
+java:S1481!".Remove this unused "invalidos" local variable.(¬Ëé8Ö¢ë¬ë1
+N
+java:S3011%",This accessibility update should be removed.(â‡Èıÿÿÿÿ8Ü¢ë¬ë1
 J
-java:S1068"(Remove this unused "smtp" private field.(…ËÅ‚úÿÿÿÿ8Ì³Ê©ë1
+java:S1068"(Remove this unused "smtp" private field.(…ËÅ‚úÿÿÿÿ8ì¢ë¬ë1
 E
-java:S1068	"(Remove this unused "port" private field.(Åı¢ 8Ì³Ê©ë1
+java:S1068"(Remove this unused "port" private field.(Åı¢ 8í¢ë¬ë1

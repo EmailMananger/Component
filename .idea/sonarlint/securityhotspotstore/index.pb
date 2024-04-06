@@ -15,3 +15,17 @@ c
 3src/main/java/org/CodaFofo/EmailMessageRunnble.java,b/5/b57f12857da299df7a16d0b43cfe9a210576bcc2
 d
 4src/main/java/org/CodaFofo/EmailConfigAnotation.java,c/9/c938cac58d66dde1db1539f9a65805cdc2badee6
+_
+/src/main/java/org/CodaFofo/anotations/Smtp.java,a/1/a1bf782eb739902d7daf648d91d4bfbe2f37d201
+_
+/src/main/java/org/CodaFofo/anotations/User.java,c/0/c0e0c6693a4fe4bcbb1f7152f0a0daad83afbc28
+c
+3src/main/java/org/CodaFofo/anotations/Password.java,b/0/b01baf3c70dfa34b2271ba67969d84bc81e3b598
+i
+9src/main/java/org/CodaFofo/SimpleEmailMessageRunnble.java,6/a/6a4024988f4cb62bde713bff421c29ed574f6d77
+c
+3src/main/java/org/CodaFofo/SimpleEmailRunnable.java,c/4/c4d674cbb2f70ccd3787c690e99db55771aa018b
+r
+Bsrc/main/java/org/CodaFofo/anotations/SimpleEmailHtlmRunnable.java,2/c/2cedc1d5a788e2881c9e588abbff35eb6b76971d
+g
+7src/main/java/org/CodaFofo/SimpleEmailHtlmRunnable.java,7/e/7e55fd40654fe804b5ff3cef56d07e23cd80e066

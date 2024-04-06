@@ -5,7 +5,7 @@ import org.apache.commons.mail.Email;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;
 
-public class EmailMessageRunnble implements Runnable{
+public class SimpleEmailRunnable implements Runnable{
 
     private final String smtp = "smtp.gmail.com";
     private final int port = 465;
@@ -15,7 +15,7 @@ public class EmailMessageRunnble implements Runnable{
     private String to;
     private String message;
     private String subject;
-    public EmailMessageRunnble(String userName, String password, String to, String message, String subject) {
+    public SimpleEmailRunnable(String userName, String password, String to, String message, String subject) {
         this.userName = userName;
         this.password = password;
         this.to = to;
@@ -31,8 +31,8 @@ public class EmailMessageRunnble implements Runnable{
         email.setSSLOnConnect(true);
         try {
             email.setFrom(userName);
-            email.setSubject("TestMail");
-            email.setMsg("This is a test mail ... :-)");
+            email.setSubject(subject);
+            email.setMsg(message);
             email.addTo(to);
             email.send();
         } catch (EmailException e) {
