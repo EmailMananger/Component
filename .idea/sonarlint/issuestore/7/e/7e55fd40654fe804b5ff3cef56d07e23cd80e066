@@ -1,6 +1,8 @@
 
-g	java:S112E"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ç–‡­ë1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³Ëûøÿÿÿÿ8Ë–‡­ë1
-]	java:S107-"AConstructor has 8 parameters, which is greater than 7 authorized.(Æ®Ä÷8ç–‡­ë1
+g	java:S112I"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8áè°®ë1
+T
+java:S2629G"7Use the built-in formatting to construct this argument.(®±´Ô8ÛÊ¿®ë1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³Ëûøÿÿÿÿ8ãè°®ë1
+]	java:S1070"AConstructor has 8 parameters, which is greater than 7 authorized.(Æ®Ä÷8çè°®ë1
 \
-java:S5527<"?Enable server hostname verification on this SSL/TLS connection.(Ì×û8î–‡­ë1
+java:S5527?"?Enable server hostname verification on this SSL/TLS connection.(Ì×û8îè°®ë1

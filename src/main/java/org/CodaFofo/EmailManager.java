@@ -2,14 +2,15 @@ package org.CodaFofo;
 
 import org.CodaFofo.anotations.Password;
 import org.CodaFofo.anotations.User;
-
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.logging.Logger;
 
 public class EmailManager {
+    Logger logger = Logger.getLogger(getClass().getName());
     private  final String smtp = "smtp.gmail.com";
     private  final int port = 465;
     private String userName;
@@ -59,7 +60,11 @@ public class EmailManager {
      */
     public void sendSimpleEmailToMany(List<String> to, String message, String subject ) {
        for (String target : to) {
-           executor.execute(new SimpleEmailRunnable(userName, password,target, message, subject));
+           if (validateEmail(target)) {
+               executor.execute(new SimpleEmailRunnable(userName, password,target, message, subject));
+           }else {
+               logger.warning("Email inválido: "+target);
+           }
        }
     }
 
@@ -70,9 +75,16 @@ public class EmailManager {
      * @param to Lista de destinatários do email
      * @param altMessage Mensagem alternativa do email que será enviado caso o cliente de email não suporte HTML
      */
-public void sendSimpleEmailHtmlToMany(  List<String> to, String htmlMessage, String subject, String altMessage) {
+    public void sendSimpleEmailHtmlToMany(  List<String> to, String htmlMessage, String subject, String altMessage) {
        for (String target : to) {
-           executor.execute(new SimpleEmailHtlmRunnable(userName, password,target, subject, htmlMessage, altMessage));
+           if (validateEmail(target)) {
+               executor.execute(new SimpleEmailHtlmRunnable(userName, password,target, subject, htmlMessage, altMessage));
+           }else {
+               logger.warning("Email inválido: "+target);
+           }
        }
+    }
+    private static boolean validateEmail(String email){
+        return email.matches("^[A-Za-z0-9+_.-]+@(.+)$");
     }
 }

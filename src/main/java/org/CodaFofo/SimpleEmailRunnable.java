@@ -5,8 +5,11 @@ import org.apache.commons.mail.Email;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;
 
+import java.util.logging.Logger;
+
 public class SimpleEmailRunnable implements Runnable{
 
+    Logger logger = Logger.getLogger(getClass().getName());
     private final String smtp = "smtp.gmail.com";
     private final int port = 465;
     private String userName;
@@ -35,6 +38,7 @@ public class SimpleEmailRunnable implements Runnable{
             email.setMsg(message);
             email.addTo(to);
             email.send();
+            logger.info("Email simples para "+to+" enviado com sucesso");
         } catch (EmailException e) {
             throw new RuntimeException(e);
         }

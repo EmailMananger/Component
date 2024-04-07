@@ -1,13 +1,4 @@
 
-Q
-java:S3740"/Provide the parametrized type for this generic.(Ÿ–²Åùÿÿÿÿ8²Ÿ¿­ë1
-L
-java:S3740"/Provide the parametrized type for this generic.(ÔŸÊ»8³Ÿ¿­ë1
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³Ëûøÿÿÿÿ8´Ÿ¿­ë1
-`
-java:S1854">Remove this useless assignment to local variable "listaEmail".(Ÿ–²Åùÿÿÿÿ8¿Ÿ¿­ë1
-¡
-java:S1130"Remove the declaration of thrown exception 'org.apache.commons.mail.EmailException', as it cannot be thrown from method's body.(ÈÿÖÌúÿÿÿÿ8¿Ÿ¿­ë1
-Q
-java:S1481"/Remove this unused "listaEmail" local variable.(Ÿ–²Åùÿÿÿÿ8ÁŸ¿­ë1
-]	java:S125"<This block of commented-out lines of code should be removed.(Ëá±Ðþÿÿÿÿ8ý—À­ë1
+d
+java:S2094"BRemove this empty class, write its code or make it an "interface".(³Ëûøÿÿÿÿ8Çˆ‚®ë1
