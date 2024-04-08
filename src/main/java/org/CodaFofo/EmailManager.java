@@ -99,12 +99,16 @@ public class EmailManager {
     public void sendSimpleEmailWithAttachmentToMany(List<String> to, String message, String subject, String pathAttachment, String nameAttachment, String descriptionAttachment) {
         File file = new File(pathAttachment);
         if (file.exists()){
-            for (String target : to) {
-                if (validateEmail(target)) {
-                    executor.execute(new EmailWithAttachment(userName, password,target, message, subject, pathAttachment, nameAttachment, descriptionAttachment));
-                }else {
-                    logger.warning("Email inválido: "+target);
+            if (file.length()<25000000){
+                for (String target : to) {
+                    if (validateEmail(target)) {
+                        executor.execute(new EmailWithAttachment(userName, password,target, message, subject, pathAttachment, nameAttachment, descriptionAttachment));
+                    }else {
+                        logger.warning("Email inválido: "+target);
+                    }
                 }
+            }else {
+                logger.warning("Arquivo muito grande para ser anexado: "+pathAttachment);
             }
         }else {
             logger.warning("Arquivo não encontrado: "+pathAttachment);
