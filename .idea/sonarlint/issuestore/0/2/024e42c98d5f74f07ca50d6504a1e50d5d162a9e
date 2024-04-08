@@ -1,26 +1,26 @@
 
-g	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ñìêíë1
-g	java:S1123"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ñìêíë1
+g	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¤¬œîë1
+g	java:S1123"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¥¬œîë1
 o
-java:S1192D"RDefine a constant instead of duplicating this literal "Email invÃ¡lido: " 3 times.(Ú˜Ş8Òìêíë1
+java:S1192D"RDefine a constant instead of duplicating this literal "Email invÃ¡lido: " 3 times.(Ú˜Ş8¥¬œîë1
 T
-java:S2629D"7Use the built-in formatting to construct this argument.(Ú˜Ş8Òìêíë1
+java:S2629D"7Use the built-in formatting to construct this argument.(Ú˜Ş8¦¬œîë1
 T
-java:S2629U"7Use the built-in formatting to construct this argument.(Ú˜Ş8Òìêíë1
+java:S2629U"7Use the built-in formatting to construct this argument.(Ú˜Ş8¦¬œîë1
 T
-java:S2629a"7Use the built-in formatting to construct this argument.(Ú˜Ş8Òìêíë1
+java:S2629j"7Use the built-in formatting to construct this argument.(Ú˜Ş8¦¬œîë1
 Y
-java:S2629e"7Use the built-in formatting to construct this argument.(¨ï‡Íşÿÿÿÿ8à·ëíë1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³Ëûøÿÿÿÿ8Óìêíë1
+java:S2629n"7Use the built-in formatting to construct this argument.(¨ï‡Íşÿÿÿÿ8¦¬œîë1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³Ëûøÿÿÿÿ8§¬œîë1
 C
-java:S1170"!Make this final field static too.(…ËÅ‚úÿÿÿÿ8àìêíë1
+java:S1170"!Make this final field static too.(…ËÅ‚úÿÿÿÿ8·¬œîë1
 >
-java:S1170"!Make this final field static too.(Åı¢ 8àìêíë1
+java:S1170"!Make this final field static too.(Åı¢ 8·¬œîë1
 K
-java:S1481$".Remove this unused "invalidos" local variable.(¬Ëé8ãìêíë1
+java:S1481$".Remove this unused "invalidos" local variable.(¬Ëé8º¬œîë1
 N
-java:S3011(",This accessibility update should be removed.(â‡Èıÿÿÿÿ8ãìêíë1
+java:S3011(",This accessibility update should be removed.(â‡Èıÿÿÿÿ8º¬œîë1
 J
-java:S1068"(Remove this unused "smtp" private field.(…ËÅ‚úÿÿÿÿ8íìêíë1
+java:S1068"(Remove this unused "smtp" private field.(…ËÅ‚úÿÿÿÿ8Ã¬œîë1
 E
-java:S1068"(Remove this unused "port" private field.(Åı¢ 8íìêíë1
+java:S1068"(Remove this unused "port" private field.(Åı¢ 8Ã¬œîë1

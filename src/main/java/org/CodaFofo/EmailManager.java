@@ -87,6 +87,15 @@ public class EmailManager {
        }
     }
 
+    /**
+     * Envia um email com anexo para uma lista de destinatários
+     * @param message Mensagem do email que será enviado
+     * @param subject Assunto do email que será enviado
+     * @param to Lista de destinatários do email
+     * @param pathAttachment Caminho do arquivo a ser anexado
+     * @param nameAttachment Nome do arquivo a ser anexado
+     * @param descriptionAttachment Descrição do arquivo a ser anexado
+     */
     public void sendSimpleEmailWithAttachmentToMany(List<String> to, String message, String subject, String pathAttachment, String nameAttachment, String descriptionAttachment) {
         File file = new File(pathAttachment);
         if (file.exists()){
