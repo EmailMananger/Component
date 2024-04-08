@@ -2,6 +2,8 @@ package org.CodaFofo;
 
 import org.CodaFofo.anotations.Password;
 import org.CodaFofo.anotations.User;
+
+import java.io.File;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
@@ -83,6 +85,22 @@ public class EmailManager {
                logger.warning("Email inválido: "+target);
            }
        }
+    }
+
+    public void sendSimpleEmailWithAttachmentToMany(List<String> to, String message, String subject, String pathAttachment, String nameAttachment, String descriptionAttachment) {
+        File file = new File(pathAttachment);
+        if (file.exists()){
+            for (String target : to) {
+                if (validateEmail(target)) {
+                    executor.execute(new EmailWithAttachment(userName, password,target, message, subject, pathAttachment, nameAttachment, descriptionAttachment));
+                }else {
+                    logger.warning("Email inválido: "+target);
+                }
+            }
+        }else {
+            logger.warning("Arquivo não encontrado: "+pathAttachment);
+        }
+
     }
     private static boolean validateEmail(String email){
         return email.matches("^[A-Za-z0-9+_.-]+@(.+)$");

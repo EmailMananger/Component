@@ -29,3 +29,5 @@ r
 Bsrc/main/java/org/CodaFofo/anotations/SimpleEmailHtlmRunnable.java,2/c/2cedc1d5a788e2881c9e588abbff35eb6b76971d
 g
 7src/main/java/org/CodaFofo/SimpleEmailHtlmRunnable.java,7/e/7e55fd40654fe804b5ff3cef56d07e23cd80e066
+c
+3src/main/java/org/CodaFofo/EmailWithAttachment.java,0/d/0d3a5da342ca6e1ab1abff9e0269df56b975ebed
