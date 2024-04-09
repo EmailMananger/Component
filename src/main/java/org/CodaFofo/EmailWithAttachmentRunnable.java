@@ -4,7 +4,7 @@ import org.apache.commons.mail.*;
 
 import java.util.logging.Logger;
 
-public class EmailWithAttachment implements Runnable{
+public class EmailWithAttachmentRunnable implements Runnable{
     Logger logger = Logger.getLogger(getClass().getName());
     private final String smtp = "smtp.gmail.com";
     private final int port = 465;
@@ -29,7 +29,7 @@ public class EmailWithAttachment implements Runnable{
      * @param nameAttachment Nome do arquivo a ser anexado
      * @param descriptionAttachment Descrição do arquivo a ser anexado
      */
-    public EmailWithAttachment(String userName, String password, String to, String message, String subject, String pathAttachment, String nameAttachment, String descriptionAttachment) {
+    public EmailWithAttachmentRunnable(String userName, String password, String to, String message, String subject, String pathAttachment, String nameAttachment, String descriptionAttachment) {
         this.userName = userName;
         this.password = password;
         this.to = to;

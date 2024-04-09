@@ -1,14 +1,0 @@
-
-g	java:S112'"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ğú«ë1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³Ëûøÿÿÿÿ8—ğú«ë1
-C
-java:S1170
-"!Make this final field static too.(…ËÅ‚úÿÿÿÿ8©ğú«ë1
->
-java:S1170"!Make this final field static too.(Åı¢ 8©ğú«ë1
-\
-java:S5527"?Enable server hostname verification on this SSL/TLS connection.(Ì×û8·ğú«ë1
-M
-java:S1068"+Remove this unused "message" private field.(ù„è¿ûÿÿÿÿ8¿ğú«ë1
-H
-java:S1068"+Remove this unused "subject" private field.(­¬í8¿ğú«ë1

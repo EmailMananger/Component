@@ -11,7 +11,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.logging.Logger;
 
-public class EmailManager {
+public class EmailManager implements EmailManagerInterface {
     Logger logger = Logger.getLogger(getClass().getName());
     private  final String smtp = "smtp.gmail.com";
     private  final int port = 465;
@@ -102,7 +102,7 @@ public class EmailManager {
             if (file.length()<25000000){
                 for (String target : to) {
                     if (validateEmail(target)) {
-                        executor.execute(new EmailWithAttachment(userName, password,target, message, subject, pathAttachment, nameAttachment, descriptionAttachment));
+                        executor.execute(new EmailWithAttachmentRunnable(userName, password,target, message, subject, pathAttachment, nameAttachment, descriptionAttachment));
                     }else {
                         logger.warning("Email inválido: "+target);
                     }
