@@ -1,7 +1,7 @@
-package org.CodaFofo;
+package org.TrabalhoPOO;
 
-import org.CodaFofo.anotations.Password;
-import org.CodaFofo.anotations.User;
+import org.TrabalhoPOO.anotations.Password;
+import org.TrabalhoPOO.anotations.User;
 
 import java.io.File;
 import java.lang.reflect.Field;

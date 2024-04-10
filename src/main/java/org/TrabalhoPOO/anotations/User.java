@@ -1,4 +1,4 @@
-package org.CodaFofo.anotations;
+package org.TrabalhoPOO.anotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,5 +7,5 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.FIELD, ElementType.ANNOTATION_TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Password {
+public @interface User {
 }

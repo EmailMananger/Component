@@ -1,4 +1,4 @@
-package org.CodaFofo;
+package org.TrabalhoPOO;
 
 import org.apache.commons.mail.*;
 
