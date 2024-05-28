@@ -1,20 +1,30 @@
-package org.TrabalhoPOO;
+package org.trabalhoPoo.implemetations;
 
 import org.apache.commons.mail.*;
+import org.trabalhoPoo.interfaces.EmailHtmlInterface;
+import org.trabalhoPoo.interfaces.EmailInterface;
 
-import java.util.logging.Logger;
+public class EmailHtlmRunnable extends AbstractEmail implements EmailHtmlInterface {
 
-public class SimpleEmailHtlmRunnable implements Runnable{
-    Logger logger = Logger.getLogger(getClass().getName());
-    private String smtp = "smtp.gmail.com";
-    private int port = 465;
-    private String userName;
-    private String password;
     private HtmlEmail email = new HtmlEmail();
-    private String to;
-    private String subject;
     private String htmlMessage;
     private String altMessage;
+
+    public String getHtmlMessage() {
+        return htmlMessage;
+    }
+
+    public void setHtmlMessage(String htmlMessage) {
+        this.htmlMessage = htmlMessage;
+    }
+
+    public String getAltMessage() {
+        return altMessage;
+    }
+
+    public void setAltMessage(String altMessage) {
+        this.altMessage = altMessage;
+    }
 
     /**
      * Contrutor da classe com informações apenas do email
@@ -25,13 +35,14 @@ public class SimpleEmailHtlmRunnable implements Runnable{
      * @param htmlMessage Mensagem do email em html
      * @param altMessage Mensagem do email em texto
      */
-    public SimpleEmailHtlmRunnable(String userName, String password, String to, String subject,String htmlMessage, String altMessage) {
-        this.userName = userName;
-        this.password = password;
-        this.to = to;
-        this.subject = subject;
+    public EmailHtlmRunnable(String userName, String password, String to, String subject, String htmlMessage, String altMessage) {
+        super(userName,password,to,subject);
         this.htmlMessage = htmlMessage;
         this.altMessage = altMessage;
+    }
+
+    public EmailHtlmRunnable(String userName, String password, String to, String subject) {
+        super(userName, password, to, subject);
     }
 
     /**
@@ -45,9 +56,8 @@ public class SimpleEmailHtlmRunnable implements Runnable{
      * @param smtp Servidor smtp
      * @param port Porta do servidor smtp
      */
-    public SimpleEmailHtlmRunnable(String userName, String password, String to, String subject,String htmlMessage, String altMessage,String smtp, int port) {
-        this.userName = userName;
-        this.password = password;
+    public EmailHtlmRunnable(String userName, String password, String to, String subject, String htmlMessage, String altMessage, String smtp, int port) {
+        super(userName,password,to,subject);
         this.to = to;
         this.subject = subject;
         this.htmlMessage = htmlMessage;

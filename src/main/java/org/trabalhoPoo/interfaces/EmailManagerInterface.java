@@ -1,4 +1,4 @@
-package org.TrabalhoPOO;
+package org.trabalhoPoo.interfaces;
 
 import java.util.List;
 

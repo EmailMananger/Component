@@ -1,29 +1,28 @@
-package org.TrabalhoPOO;
+package org.trabalhoPoo.implemetations;
 
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.Email;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;
+import org.trabalhoPoo.interfaces.SimpleEmailInterface;
 
-import java.util.logging.Logger;
 
-public class SimpleEmailRunnable implements Runnable{
+public class SimpleEmailInterfaceRunnable extends AbstractEmail implements SimpleEmailInterface {
 
-    Logger logger = Logger.getLogger(getClass().getName());
-    private final String smtp = "smtp.gmail.com";
-    private final int port = 465;
-    private String userName;
-    private String password;
     Email email = new SimpleEmail();
-    private String to;
     private String message;
-    private String subject;
-    public SimpleEmailRunnable(String userName, String password, String to, String message, String subject) {
-        this.userName = userName;
-        this.password = password;
-        this.to = to;
+
+    public SimpleEmailInterfaceRunnable(String userName, String password, String to, String message, String subject) {
+        super(userName, password, to, subject);
         this.message = message;
-        this.subject = subject;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     @Override

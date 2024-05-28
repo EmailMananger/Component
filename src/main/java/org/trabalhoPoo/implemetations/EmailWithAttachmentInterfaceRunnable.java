@@ -1,23 +1,20 @@
-package org.TrabalhoPOO;
+package org.trabalhoPoo.implemetations;
 
 import org.apache.commons.mail.*;
+import org.trabalhoPoo.interfaces.EmailWithAttachmentInterface;
 
 import java.util.logging.Logger;
 
-public class EmailWithAttachmentRunnable implements Runnable{
+public class EmailWithAttachmentInterfaceRunnable extends AbstractEmail implements EmailWithAttachmentInterface {
     Logger logger = Logger.getLogger(getClass().getName());
-    private final String smtp = "smtp.gmail.com";
-    private final int port = 465;
-    private String userName;
-    private String password;
+
     MultiPartEmail email = new MultiPartEmail();
     EmailAttachment attachment = new EmailAttachment();
-    private String to;
     private String message;
-    private String subject;
     private String pathAttachment;
     private String nameAttachment;
     private String descriptionAttachment;
+
     /**
      * Contrutor da classe com informações do email e do servidor smtp para implementação futura
      * @param userName Nome do usuário da conta que enviará o email
@@ -29,14 +26,43 @@ public class EmailWithAttachmentRunnable implements Runnable{
      * @param nameAttachment Nome do arquivo a ser anexado
      * @param descriptionAttachment Descrição do arquivo a ser anexado
      */
-    public EmailWithAttachmentRunnable(String userName, String password, String to, String message, String subject, String pathAttachment, String nameAttachment, String descriptionAttachment) {
-        this.userName = userName;
-        this.password = password;
-        this.to = to;
+    public EmailWithAttachmentInterfaceRunnable(String userName, String password, String to, String message, String subject, String pathAttachment, String nameAttachment, String descriptionAttachment) {
+        super(userName,password,to,subject);
         this.message = message;
-        this.subject = subject;
         this.pathAttachment = pathAttachment;
         this.nameAttachment = nameAttachment;
+        this.descriptionAttachment = descriptionAttachment;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getPathAttachment() {
+        return pathAttachment;
+    }
+
+    public void setPathAttachment(String pathAttachment) {
+        this.pathAttachment = pathAttachment;
+    }
+
+    public String getNameAttachment() {
+        return nameAttachment;
+    }
+
+    public void setNameAttachment(String nameAttachment) {
+        this.nameAttachment = nameAttachment;
+    }
+
+    public String getDescriptionAttachment() {
+        return descriptionAttachment;
+    }
+
+    public void setDescriptionAttachment(String descriptionAttachment) {
         this.descriptionAttachment = descriptionAttachment;
     }
 
