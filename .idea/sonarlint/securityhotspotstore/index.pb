@@ -37,3 +37,15 @@ Jsrc/main/java/org/trabalhoPoo/interfaces/EmailWithAttachmentInterface.java,6/8
 Vsrc/main/java/org/trabalhoPoo/implemetations/EmailWithAttachmentInterfaceRunnable.java,1/0/100cb76c55068c4028bb88a548ba5fa81425e419
 P
  JavaDoc/index-files/index-1.html,1/0/108fbf40a1d0ca3bcc2e53a5d812bde003843b22
+p
+@src/main/java/org/trabalhoPoo/factorys/EmailsFactoryCommons.java,5/f/5fc073b3939ec3e7d359d6ad7db270825806236c
+r
+Bsrc/main/java/org/trabalhoPoo/interfaces/EmailManangerBuilder.java,9/2/921523b8145695cd499e3d4f1f6021b9add78b39
+{
+Ksrc/main/java/org/trabalhoPoo/interfaces/EmailManangerBuilderInterface.java,e/1/e16489dfbc1129a8d884a8548d332f15c97086cd
+v
+Fsrc/main/java/org/trabalhoPoo/implemetations/EmailManangerBuilder.java,9/3/9309920cf23c1f4e8039f0d19f1e00e736811f8f
+j
+:src/main/java/org/trabalhoPoo/interfaces/EmailManager.java,8/0/80a6382dc617826b565fa59284f0243b9ea288e9
+w
+Gsrc/main/java/org/trabalhoPoo/implemetations/EmailManagerInterface.java,f/e/fe011c26e82b0bbb145844ecd0aeb091b9800d6d

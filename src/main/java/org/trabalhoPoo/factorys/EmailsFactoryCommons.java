@@ -8,7 +8,7 @@ import org.trabalhoPoo.interfaces.EmailWithAttachmentInterface;
 import org.trabalhoPoo.interfaces.EmailsFactoryInterface;
 import org.trabalhoPoo.interfaces.SimpleEmailInterface;
 
-public class EmailsFactory implements EmailsFactoryInterface {
+public class EmailsFactoryCommons implements EmailsFactoryInterface {
 
     public EmailHtmlInterface getEmailHtml(String userName, String password, String to, String subject, String htmlMessage, String altMessage){
         return new EmailHtlmRunnable(userName, password, to, subject,htmlMessage,altMessage);
