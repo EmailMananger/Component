@@ -1,4 +1,4 @@
-package org.trabalhoPoo.email;
+package org.trabalhoPoo.emails;
 
 import org.apache.commons.mail.*;
 

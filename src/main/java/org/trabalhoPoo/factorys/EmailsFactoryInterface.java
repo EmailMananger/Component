@@ -1,8 +1,8 @@
 package org.trabalhoPoo.factorys;
 
-import org.trabalhoPoo.email.EmailHtmlInterface;
-import org.trabalhoPoo.email.EmailWithAttachmentInterface;
-import org.trabalhoPoo.email.SimpleEmailInterface;
+import org.trabalhoPoo.emails.EmailHtmlInterface;
+import org.trabalhoPoo.emails.EmailWithAttachmentInterface;
+import org.trabalhoPoo.emails.SimpleEmailInterface;
 
 public interface EmailsFactoryInterface {
     EmailHtmlInterface getEmailHtml(String userName, String password, String to, String subject, String htmlMessage, String altMessage);

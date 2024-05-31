@@ -55,3 +55,7 @@ u
 Esrc/main/java/org/trabalhoPoo/email/SimpleEmailInterfaceRunnable.java,2/d/2d3fdc47ecc5d432613fdba8c271dfc4a3394255
 f
 6src/main/java/org/trabalhoPoo/email/AbstractEmail.java,4/f/4ff18ee05be38f54b44dd7068f9afc49f43edbde
+g
+7src/main/java/org/trabalhoPoo/emails/AbstractEmail.java,d/b/dbe953ecff9e04a7e945129955635725e7fc2e9f
+v
+Fsrc/main/java/org/trabalhoPoo/emails/SimpleEmailInterfaceRunnable.java,5/1/5145aedfd8400f703c07b0a8708b95a393ada597

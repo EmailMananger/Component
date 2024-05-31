@@ -1,4 +1,4 @@
-package org.trabalhoPoo.email;
+package org.trabalhoPoo.emails;
 
 public interface EmailInterface extends Runnable {
    String getSmtp();
