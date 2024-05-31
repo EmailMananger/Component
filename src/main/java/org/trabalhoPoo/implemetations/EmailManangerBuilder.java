@@ -62,11 +62,22 @@ public class EmailManangerBuilder implements EmailManangerBuilderInterface{
         emailManager.setEmailsFactoryInterface(this.emailsFactoryInterface);
         //Seta o executor
         emailManager.setExecutor(this.executor);
-
+        //Reseta os valores
+        resetValues();
         //retorna objeto preenchido
         return emailManager;
     }
 
+    /**
+     * Reseta os valores do builder
+     */
+    private void resetValues(){
+        this.userName = null;
+        this.password = null;
+        this.executor = Executors.newFixedThreadPool(10);
+        this.emailsFactoryInterface = new EmailsFactoryCommons();
+        this.usernameAndPasswor = null;
+    }
     private boolean preencherUsuarioSenha(Object usernameAndPasswor) {
         boolean userPreenchido=false,passwordPreenchido = false;
         Class<?> classe = usernameAndPasswor.getClass();
