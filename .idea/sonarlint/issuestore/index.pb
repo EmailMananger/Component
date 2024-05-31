@@ -49,3 +49,9 @@ j
 :src/main/java/org/trabalhoPoo/interfaces/EmailManager.java,8/0/80a6382dc617826b565fa59284f0243b9ea288e9
 w
 Gsrc/main/java/org/trabalhoPoo/implemetations/EmailManagerInterface.java,f/e/fe011c26e82b0bbb145844ecd0aeb091b9800d6d
+H
+src/main/java/Teste.java,a/2/a27122abf51d4047823b5a5e028f60e8c852bf02
+u
+Esrc/main/java/org/trabalhoPoo/email/SimpleEmailInterfaceRunnable.java,2/d/2d3fdc47ecc5d432613fdba8c271dfc4a3394255
+f
+6src/main/java/org/trabalhoPoo/email/AbstractEmail.java,4/f/4ff18ee05be38f54b44dd7068f9afc49f43edbde

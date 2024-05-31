@@ -1,4 +1,4 @@
-package org.trabalhoPoo.implemetations;
+package org.trabalhoPoo.email;
 
 import java.util.logging.Logger;
 

@@ -5,7 +5,7 @@ import org.trabalhoPoo.anotations.User;
 import org.trabalhoPoo.factorys.EmailsFactoryCommons;
 import org.trabalhoPoo.interfaces.EmailManagerInterface;
 import org.trabalhoPoo.interfaces.EmailManangerBuilderInterface;
-import org.trabalhoPoo.interfaces.EmailsFactoryInterface;
+import org.trabalhoPoo.factorys.EmailsFactoryInterface;
 
 import java.lang.reflect.Field;
 import java.util.concurrent.ExecutorService;

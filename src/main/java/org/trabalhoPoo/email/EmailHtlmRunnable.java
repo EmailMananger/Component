@@ -1,8 +1,6 @@
-package org.trabalhoPoo.implemetations;
+package org.trabalhoPoo.email;
 
 import org.apache.commons.mail.*;
-import org.trabalhoPoo.interfaces.EmailHtmlInterface;
-import org.trabalhoPoo.interfaces.EmailInterface;
 
 public class EmailHtlmRunnable extends AbstractEmail implements EmailHtmlInterface {
 

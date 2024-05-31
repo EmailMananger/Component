@@ -1,5 +1,6 @@
 package org.trabalhoPoo.interfaces;
 
+import org.trabalhoPoo.factorys.EmailsFactoryInterface;
 import org.trabalhoPoo.implemetations.EmailManangerBuilder;
 
 import java.util.concurrent.ExecutorService;

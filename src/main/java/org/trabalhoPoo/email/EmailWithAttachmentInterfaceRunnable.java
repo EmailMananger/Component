@@ -1,7 +1,6 @@
-package org.trabalhoPoo.implemetations;
+package org.trabalhoPoo.email;
 
 import org.apache.commons.mail.*;
-import org.trabalhoPoo.interfaces.EmailWithAttachmentInterface;
 
 import java.util.logging.Logger;
 

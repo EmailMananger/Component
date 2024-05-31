@@ -1,12 +1,11 @@
 package org.trabalhoPoo.factorys;
 
-import org.trabalhoPoo.implemetations.EmailHtlmRunnable;
-import org.trabalhoPoo.implemetations.EmailWithAttachmentInterfaceRunnable;
-import org.trabalhoPoo.implemetations.SimpleEmailInterfaceRunnable;
-import org.trabalhoPoo.interfaces.EmailHtmlInterface;
-import org.trabalhoPoo.interfaces.EmailWithAttachmentInterface;
-import org.trabalhoPoo.interfaces.EmailsFactoryInterface;
-import org.trabalhoPoo.interfaces.SimpleEmailInterface;
+import org.trabalhoPoo.email.EmailHtlmRunnable;
+import org.trabalhoPoo.email.EmailWithAttachmentInterfaceRunnable;
+import org.trabalhoPoo.email.SimpleEmailInterfaceRunnable;
+import org.trabalhoPoo.email.EmailHtmlInterface;
+import org.trabalhoPoo.email.EmailWithAttachmentInterface;
+import org.trabalhoPoo.email.SimpleEmailInterface;
 
 public class EmailsFactoryCommons implements EmailsFactoryInterface {
 

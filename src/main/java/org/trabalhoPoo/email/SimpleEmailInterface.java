@@ -1,4 +1,4 @@
-package org.trabalhoPoo.interfaces;
+package org.trabalhoPoo.email;
 
 public interface SimpleEmailInterface extends EmailInterface{
      String getMessage();

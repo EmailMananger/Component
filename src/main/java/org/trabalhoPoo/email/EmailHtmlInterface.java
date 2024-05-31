@@ -1,4 +1,4 @@
-package org.trabalhoPoo.interfaces;
+package org.trabalhoPoo.email;
 
 public interface EmailHtmlInterface extends EmailInterface{
     String getHtmlMessage();
