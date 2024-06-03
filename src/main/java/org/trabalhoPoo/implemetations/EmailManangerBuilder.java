@@ -46,6 +46,10 @@ public class EmailManangerBuilder implements EmailManangerBuilderInterface{
         return new EmailManangerBuilder();
     }
 
+    /**
+     * Constroi o objeto EmailManager
+     * @return EmailManagerInterface
+     */
     @Override
     public EmailManagerInterface Build() {
         EmailManager emailManager = new EmailManager();
@@ -58,6 +62,10 @@ public class EmailManangerBuilder implements EmailManangerBuilderInterface{
                 throw new RuntimeException("Não foi possível preencher o usuário e senha");
             }
         }
+        //Seta o username
+        emailManager.setUserName(this.userName);
+        //Seta a senha
+        emailManager.setPassword(this.password);
         //Seta o Emails factory
         emailManager.setEmailsFactoryInterface(this.emailsFactoryInterface);
         //Seta o executor
@@ -78,6 +86,11 @@ public class EmailManangerBuilder implements EmailManangerBuilderInterface{
         this.emailsFactoryInterface = new EmailsFactoryCommons();
         this.usernameAndPasswor = null;
     }
+    /**
+     * Preenche o usuario e senha a partir de um objeto com anotações
+     * @param usernameAndPasswor
+     * @return
+     */
     private boolean preencherUsuarioSenha(Object usernameAndPasswor) {
         boolean userPreenchido=false,passwordPreenchido = false;
         Class<?> classe = usernameAndPasswor.getClass();
