@@ -1,6 +1,6 @@
 
 7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 s
 Csrc/main/java/org/trabalhoPoo/interfaces/EmailManagerInterface.java,d/2/d2e310f2e9bb665781401a76dedd1a8299b543b7
 n
@@ -19,10 +19,6 @@ g
 7src/main/java/org/trabalhoPoo/emails/AbstractEmail.java,d/b/dbe953ecff9e04a7e945129955635725e7fc2e9f
 v
 Fsrc/main/java/org/trabalhoPoo/emails/SimpleEmailInterfaceRunnable.java,5/1/5145aedfd8400f703c07b0a8708b95a393ada597
-G
-src/main/java/Main.java,e/4/e44a8606ce010ad9b89aafdfcee2ab49afbf6d10
-N
-src/main/java/Credentials.java,b/4/b4e43c54311027ea99f3a4c552ea3085f41a0d4b
 r
 Bsrc/main/java/org/trabalhoPoo/factorys/EmailsFactoryInterface.java,e/3/e3460841e9531c92555c7ec4d21f5ba4081e9e53
 k
@@ -193,3 +189,7 @@ z
 JJavaDoc/org/trabalhoPoo/emails/class-use/EmailWithAttachmentInterface.html,7/2/7285695a1cad52b40513c9bc7e0aaa79a0801358
 o
 ?JavaDoc/org/trabalhoPoo/emails/class-use/EmailHtlmRunnable.html,4/9/49c0f26343b5b34cd9ea78cd498a80ed136cb9c7
+b
+2src/main/java/org/trabalhoPoo/anotations/User.java,8/f/8ff4cfc41a2615e5868b3d2005cac32d79d02692
+f
+6src/main/java/org/trabalhoPoo/anotations/Password.java,4/1/4156c77f47eda35c19add57f365a8578994fad9a

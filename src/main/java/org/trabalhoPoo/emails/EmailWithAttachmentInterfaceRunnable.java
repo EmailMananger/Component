@@ -3,7 +3,10 @@ package org.trabalhoPoo.emails;
 import org.apache.commons.mail.*;
 
 import java.util.logging.Logger;
-
+/**
+ * Classe que implementa a interface EmailWithAttachmentInterface e faz o envio de um email com anexo
+ * usando como base o Commons Email
+ */
 public class EmailWithAttachmentInterfaceRunnable extends AbstractEmail implements EmailWithAttachmentInterface {
     Logger logger = Logger.getLogger(getClass().getName());
 

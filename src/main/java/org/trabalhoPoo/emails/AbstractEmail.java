@@ -2,6 +2,9 @@ package org.trabalhoPoo.emails;
 
 import java.util.logging.Logger;
 
+/**
+ * Classe abstrata que contém os atributos e métodos comuns a todos os tipos de email
+ */
 public abstract class AbstractEmail {
     Logger logger = Logger.getLogger(getClass().getName());
     protected String smtp = "smtp.gmail.com";

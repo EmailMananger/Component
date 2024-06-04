@@ -5,7 +5,10 @@ import org.apache.commons.mail.Email;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.SimpleEmail;
 
-
+/**
+ * Classe que implementa a interface SimpleEmailInterface e faz o envio de um email simples
+  usando como base o Commons Email
+ */
 public class SimpleEmailInterfaceRunnable extends AbstractEmail implements SimpleEmailInterface {
 
     Email email = new SimpleEmail();

@@ -1,7 +1,9 @@
 package org.trabalhoPoo.emails;
 
 import org.apache.commons.mail.*;
-
+/**
+ * Classe que implementa a interface EmailHtmlInterface e faz o envio de um email em html usando como base o Commons Email
+ * */
 public class EmailHtlmRunnable extends AbstractEmail implements EmailHtmlInterface {
 
     private HtmlEmail email = new HtmlEmail();
@@ -39,6 +41,13 @@ public class EmailHtlmRunnable extends AbstractEmail implements EmailHtmlInterfa
         this.altMessage = altMessage;
     }
 
+    /**
+     * Contrutor da classe com informações do email
+     * @param userName Nome do usuário da conta que enviará o email
+     * @param password Senha da que enviará o email
+     * @param to Email do destinatário
+     * @param subject Assunto do email
+     */
     public EmailHtlmRunnable(String userName, String password, String to, String subject) {
         super(userName, password, to, subject);
     }

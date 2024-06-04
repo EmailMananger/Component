@@ -7,6 +7,9 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.logging.Logger;
 
+/**
+ * Classe que implementa o envio de emails
+ */
 public class EmailManager implements EmailManagerInterface {
     Logger logger = Logger.getLogger(getClass().getName());
     private String userName;

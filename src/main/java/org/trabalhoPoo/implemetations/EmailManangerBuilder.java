@@ -11,7 +11,13 @@ import java.lang.reflect.Field;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * Classe que implementa a interface EmailManangerBuilderInterface e é responsável por construir o objeto EmailManager
+ * */
 public class EmailManangerBuilder implements EmailManangerBuilderInterface{
+    /**
+     * Atributos da classe
+     */
     private String userName = null;
     private String password = null;
     private ExecutorService executor = Executors.newFixedThreadPool(10);
